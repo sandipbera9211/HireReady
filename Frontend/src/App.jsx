@@ -11,6 +11,7 @@ import Feedback from './Component/Feedback'
 import SignIn from './Component/Signin'
 import SignUp from './Component/SignUp'
 import Footer from './Component/Footer'
+import Upgrade from './Component/Upgrade'
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
       <Route path='/interview/feedback/:id' element={<Feedback/>}/>
       <Route path='/sign-in' element={<SignIn/>}/>
       <Route path='/sign-up' element={<SignUp/>}/>
+      <Route path='/upgrade' element={<Upgrade/>}/>
      </Routes>
      <Footer/>
     </div>
