@@ -92,8 +92,8 @@ const user = stored && stored !== 'undefined' ? JSON.parse(stored) : null;
           ) : (
             <div className='flex items-center gap-3'>
               <Link to={'/upgrade'}>
-              <span className='text-xs bg-violet-500/15 text-violet-300 border border-violet-500/25 px-3 py-1 rounded-full font-medium hover:bg-violet-700 cursor-pointer'>
-                Upgrade
+              <span className={`text-xs px-3 py-1 rounded-full font-medium cursor-pointer hover:bg-violet-700  ${pathname==='/upgrade' ? "bg-violet-700 text-violet-300 border border-violet-500/25":"bg-violet-500/15 text-violet-300 border-violet-500/25"} `}>
+                ⚡Upgrade
               </span>
               </Link>
 
